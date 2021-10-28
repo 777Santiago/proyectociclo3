@@ -9,9 +9,18 @@ import java.util.Date;
 public class Score implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private Integer score;
     private String message;
     private Integer reservation;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public Integer getScore() {
         return score;
